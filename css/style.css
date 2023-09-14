@@ -1,0 +1,397 @@
+body {
+    position: relative;
+    width: 100%;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 71px 31px 69px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: auto;
+    background-color: #fff;
+}
+
+.nav .menu {
+    display: flex;
+}
+
+.nav .menu li {
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    position: relative;
+}
+
+.nav .menu li.selected::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;    
+    border: 2px solid #5CA720;
+    width: 50%;
+    line-height: 10px;
+}
+
+.nav .menu li a {
+    color: #161616;
+    text-decoration: none;
+}
+
+.icons img {
+    margin-left: 18.5px;
+    margin-right: 18.5px;
+}
+
+/* CABECALHO */
+.cabecalho {
+    background-color: #ADDE87;
+    background-image: url("../img/SALE.png");
+    text-align: center;
+    padding: 84px 0 82px 0;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 48px 70px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    margin: 30px 97px;
+}
+
+.conteudo .produto .titulo_produto {
+    font-size: 22px;
+    color: #161616;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.conteudo .produto .valor_produto {
+    font-size: 25px;
+    color: #5CA720;
+}
+
+.conteudo .produto .cifrao {
+    color: #161616;
+    font-size: 20px;
+}
+
+/* FOOTER */
+.first_box {
+    border-top: 1px solid #A5A1A1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_box .links {
+    /* margin: 40px 71px 50px; */
+    margin-top: 40px;
+    margin-left: 71px;
+    margin-bottom: 50px;
+
+}
+
+.first_box .links li{
+    margin: 10px 0;
+}
+
+.second_box {
+    border-top: 1px solid #A5A1A1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_box .social_media {
+    margin-top: 43px;
+    margin-left: 71px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.second_box .social_media img {
+    margin-right: 20px;
+}
+
+.second_box .payments {
+    margin-top: 55px;
+    margin-right: 70px;
+    margin-bottom: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.second_box .payments .icon {
+    margin-left: 24px;
+}
+
+.newsletter {
+    margin-right: 70px;
+    align-self: center;
+}
+
+.newsletter .form {
+    display: flex;
+}
+
+.newsletter .form .botao {
+    background-color: #51B248;
+    font-size: 20px;
+    padding: 15px 33px;
+    font-weight: bolder;
+    color: #fff;
+    border: none;
+    border-radius: 0px 5px 5px 0;
+}
+
+.newsletter .form .email {
+    width: 397px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    background-color: #F8F8F8;
+}
+
+.newsletter .description {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 830px){
+      /* NAV */
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px 32px;
+    }
+
+    .nav .menu {
+        display: none;
+    }
+
+    /* END NAV */
+
+    .cabecalho {
+        padding: 48px;
+    }
+
+    .cabecalho img {
+        max-width: 100%;
+    }
+
+    /* CONTEUDO */
+    .conteudo {
+        padding: 28px 33px;
+    }
+
+    .conteudo .produto {
+        margin: 0;
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .conteudo .produto img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .conteudo .produto .titulo_produto {
+        font-size: 20px;
+    }
+
+    .conteudo .produto .valor_produto {
+        font-size: 18px;
+    }
+
+    .conteudo .produto .cifrao {
+        font-size: 20px;
+    }
+
+    /* END CONTEUDO */
+    /* RODAPE */
+    .first_box .links {
+        margin-top: 33px;
+        margin-left: 33px;
+        margin-bottom: 54px;
+    }
+
+    .rodape .first_box {
+        flex-direction: column;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0 33px;
+    }
+
+    .newsletter .form {
+        flex-direction: row;
+    }
+
+    .newsletter .form .email {
+        max-width: 70%;
+        height: 48px;
+        margin-bottom: 17px;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .newsletter .form .botao {
+        width: 30%;
+        margin-bottom: 42px;
+        font-size: 16px;
+    }
+
+    /* RODAPE SECOND BOX */
+    .second_box {
+        padding: 27px 30px;
+    }
+
+    .second_box .social_media {
+        margin: 0;
+    }
+
+    .second_box .payments {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* NAV */
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px 32px;
+    }
+
+    .nav .menu {
+        display: none;
+    }
+
+    /* END NAV */
+
+    .cabecalho {
+        padding: 48px;
+    }
+
+    .cabecalho img {
+        max-width: 100%;
+    }
+
+    /* CONTEUDO */
+    .conteudo {
+        padding: 28px 33px;
+        gap: 97px;
+    }
+
+    .conteudo .produto {
+        margin: 0;
+        width: 125px;
+    }
+
+    .conteudo .produto img {
+        max-width: 100%;
+    }
+
+    .conteudo .produto .titulo_produto {
+        font-size: 12px;
+    }
+
+    .conteudo .produto .valor_produto {
+        font-size: 14px;
+    }
+
+    .conteudo .produto .cifrao {
+        font-size: 12px;
+    }
+
+    /* END CONTEUDO */
+    /* RODAPE */
+    .first_box .links {
+        margin-top: 33px;
+        margin-left: 33px;
+        margin-bottom: 54px;
+    }
+
+    .rodape .first_box {
+        flex-direction: column;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0 33px;
+    }
+
+    .newsletter .form {
+        flex-direction: column;
+    }
+
+    .newsletter .form .email {
+        max-width: 100%;
+        width: 100%;
+        height: 43px;
+        margin-bottom: 17px;
+        font-weight: normal;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .newsletter .form .botao {
+        width: 100%;
+        margin-bottom: 42px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    /* RODAPE SECOND BOX */
+    .second_box {
+        padding: 27px 30px;
+    }
+
+    .second_box .social_media {
+        margin: 0;
+    }
+
+    .second_box .payments {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .conteudo .produto {
+        margin: 0;
+        width: 60%;
+        margin: 35px;
+    }
+
+    .conteudo {
+        padding: 0;
+        gap: 0;
+    }
+
+    .conteudo .produto .titulo_produto {
+        font-size: 20px;
+    }
+
+    .conteudo .produto .valor_produto {
+        font-size: 20px;
+    }
+}
